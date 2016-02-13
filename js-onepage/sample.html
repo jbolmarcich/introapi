@@ -28,10 +28,11 @@
          */
         var queryOpts = { 
           "api_key": "your api key here", 
-          "q": "dogs", 
+          "q": "cats",
           "sourceResource.type": "image",
+          "sourceResource.spatial.state": "Massachusetts",
           "fields": "id,object",
-          "page_size": "50",
+          "page_size": "15",
           "page": "1"
         };
 
@@ -99,8 +100,8 @@
   </head>
   
   <body>
-    <h1>Dogs</h1>
-    <p>This is a sample DPLA API app. It displays images of dogs.</p>
+    <h1>MassCats</h1>
+    <p>This is a feline verson of a quick sample DPLA API app. It displays images of cats in Massachusetts.</p>
     <div id="output"></div>
   </body>
 </html>
